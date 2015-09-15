@@ -1,0 +1,3 @@
+## NavigationBarHiddenAnimatesNaturally
+
+![image](image.png)
