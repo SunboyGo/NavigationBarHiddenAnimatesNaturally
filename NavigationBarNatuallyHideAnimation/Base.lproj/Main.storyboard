@@ -7,7 +7,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ScE-sA-t4C">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xeL-gN-Zls" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xeL-gN-Zls" customClass="NavigationController" customModule="NavigationBarNatuallyHideAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jur-qR-s67">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

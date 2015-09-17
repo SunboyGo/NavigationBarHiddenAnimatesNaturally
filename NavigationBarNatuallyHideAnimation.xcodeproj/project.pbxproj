@@ -14,6 +14,7 @@
 		90C058F61BA85BFD00699FBE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C058F41BA85BFD00699FBE /* LaunchScreen.xib */; };
 		90C059021BA85BFD00699FBE /* NavigationBarNatuallyHideAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C059011BA85BFD00699FBE /* NavigationBarNatuallyHideAnimationTests.swift */; };
 		90C0590C1BA861CE00699FBE /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C0590B1BA861CE00699FBE /* PageViewController.swift */; };
+		90C059401BA9C9A500699FBE /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C0593F1BA9C9A500699FBE /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		90C059001BA85BFD00699FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90C059011BA85BFD00699FBE /* NavigationBarNatuallyHideAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarNatuallyHideAnimationTests.swift; sourceTree = "<group>"; };
 		90C0590B1BA861CE00699FBE /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		90C0593F1BA9C9A500699FBE /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				90C058EB1BA85BFD00699FBE /* AppDelegate.swift */,
+				90C0593F1BA9C9A500699FBE /* NavigationController.swift */,
 				90C058ED1BA85BFD00699FBE /* ViewController1.swift */,
 				90C0590B1BA861CE00699FBE /* PageViewController.swift */,
 				90C058EF1BA85BFD00699FBE /* Main.storyboard */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90C0590C1BA861CE00699FBE /* PageViewController.swift in Sources */,
+				90C059401BA9C9A500699FBE /* NavigationController.swift in Sources */,
 				90C058EE1BA85BFD00699FBE /* ViewController1.swift in Sources */,
 				90C058EC1BA85BFD00699FBE /* AppDelegate.swift in Sources */,
 			);
@@ -415,6 +419,7 @@
 				90C059071BA85BFD00699FBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90C059081BA85BFD00699FBE /* Build configuration list for PBXNativeTarget "NavigationBarNatuallyHideAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				90C0590A1BA85BFD00699FBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
