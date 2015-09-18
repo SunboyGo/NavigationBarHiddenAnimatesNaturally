@@ -19,9 +19,18 @@ class NavigationController: UINavigationController {
         delegate = self
         interactivePopGestureRecognizer.delegate = self
     }
+    
+    func requiredToFailByInteractivePopGestureRecognizer(recognizers: [AnyObject]?) {
+        if let recognizers = recognizers as? [UIGestureRecognizer] {
+            for r in recognizers {
+                r.requireGestureRecognizerToFail(interactivePopGestureRecognizer)
+            }
+        }
+    }
 }
 
-extension NavigationController: UINavigationControllerDelegate, UIGestureRecognizerDelegate {
+// UINavigationControllerDelegate
+extension NavigationController: UINavigationControllerDelegate {
     func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool) {
         navigationController.interactivePopGestureRecognizer.enabled = true
         
@@ -38,3 +47,7 @@ extension NavigationController: UINavigationControllerDelegate, UIGestureRecogni
         }
     }
 }
+
+// UIGestureRecognizerDelegate
+extension NavigationController: UIGestureRecognizerDelegate {}
+

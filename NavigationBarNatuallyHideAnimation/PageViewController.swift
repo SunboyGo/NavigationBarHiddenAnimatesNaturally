@@ -21,11 +21,9 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
 
         dataSource = self
         delegate = self
-        
-        if let nc = navigationController {
-            for r in view.gestureRecognizers as! [UIGestureRecognizer] {
-                r.requireGestureRecognizerToFail(nc.interactivePopGestureRecognizer)
-            }
+
+        if let nv = navigationController as? NavigationController {
+            nv.requiredToFailByInteractivePopGestureRecognizer(view.gestureRecognizers)
         }
         
         let vc = ViewController.instantiateFromNib()
