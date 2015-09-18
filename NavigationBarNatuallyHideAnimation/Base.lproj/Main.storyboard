@@ -22,10 +22,10 @@
             </objects>
             <point key="canvasLocation" x="321" y="1090"/>
         </scene>
-        <!--View Controller1-->
+        <!--View Controller-->
         <scene sceneID="mBb-c4-hwR">
             <objects>
-                <viewController storyboardIdentifier="ViewController1" id="xNN-kg-RNG" customClass="ViewController1" customModule="NavigationBarNatuallyHideAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="xNN-kg-RNG" customClass="ViewController" customModule="NavigationBarNatuallyHideAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mev-I5-lXp"/>
                         <viewControllerLayoutGuide type="bottom" id="VWt-yP-FJC"/>

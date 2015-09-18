@@ -17,13 +17,13 @@ class NavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
+        interactivePopGestureRecognizer.delegate = self
     }
 }
 
 extension NavigationController: UINavigationControllerDelegate, UIGestureRecognizerDelegate {
     func navigationController(navigationController: UINavigationController, willShowViewController viewController: UIViewController, animated: Bool) {
         navigationController.interactivePopGestureRecognizer.enabled = true
-        navigationController.interactivePopGestureRecognizer.delegate = self
         
         if let vc = viewController as? NavigationBarHidable {
             if navigationController.navigationBarHidden != vc.navigationBarHidden {

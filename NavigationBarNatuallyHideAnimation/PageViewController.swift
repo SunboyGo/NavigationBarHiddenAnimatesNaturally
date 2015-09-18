@@ -28,19 +28,19 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
             }
         }
         
-        let vc = ViewController1.instantiateFromNib()
+        let vc = ViewController.instantiateFromNib()
         vc.view.backgroundColor = UIColor.yellowColor()
         setViewControllers([vc], direction: .Forward, animated: false) { _ in }
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        let vc = ViewController1.instantiateFromNib()
+        let vc = ViewController.instantiateFromNib()
         vc.view.backgroundColor = UIColor.yellowColor()
         return vc
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        let vc = ViewController1.instantiateFromNib()
+        let vc = ViewController.instantiateFromNib()
         vc.view.backgroundColor = UIColor.grayColor()
         return vc
     }
