@@ -22,8 +22,18 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
         dataSource = self
         delegate = self
 
+//        // It's okay for PageCurl
+//        if let nv = navigationController as? NavigationController {
+//            nv.requiredToFailByInteractivePopGestureRecognizer(view.gestureRecognizers)
+//        }
+        
+        // For Scroll
         if let nv = navigationController as? NavigationController {
-            nv.requiredToFailByInteractivePopGestureRecognizer(view.gestureRecognizers)
+            for v in view.subviews {
+                if let s = v as? UIScrollView {
+                    nv.requiredToFailByInteractivePopGestureRecognizer(s.gestureRecognizers)
+                }
+            }
         }
         
         let vc = ViewController.instantiateFromNib()
@@ -33,13 +43,20 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         let vc = ViewController.instantiateFromNib()
-        vc.view.backgroundColor = UIColor.yellowColor()
+        vc.view.backgroundColor = color()
         return vc
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         let vc = ViewController.instantiateFromNib()
-        vc.view.backgroundColor = UIColor.grayColor()
+        vc.view.backgroundColor = color()
         return vc
+    }
+    
+    func color() -> UIColor {
+        func r() -> CGFloat {
+            return CGFloat(CGFloat(arc4random_uniform(255))/255.0)
+        }
+        return UIColor(red: r(), green: r(), blue: r(), alpha: 1.0)
     }
 }

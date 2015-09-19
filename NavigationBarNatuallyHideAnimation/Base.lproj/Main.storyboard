@@ -44,7 +44,7 @@
         <!--Page View Controller-->
         <scene sceneID="M7s-LA-ees">
             <objects>
-                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="DUy-HY-wMO" customClass="PageViewController" customModule="NavigationBarNatuallyHideAnimation" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="DUy-HY-wMO" customClass="PageViewController" customModule="NavigationBarNatuallyHideAnimation" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8j-HN-7vX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1023" y="1386"/>
